@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="前田製薬の企業公式サイト、「お問い合わせ」のページです。ご質問や、ご意見、ご感想をこちらのページのお問い合わせフォームより承っております。">
+  <meta name="robots" content="noindex,nofollow">
+  <link href="images/favicon.png" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>前田製薬</title>
+</head>
+
+<body>
+  <div class="wrapper_contact" id="return_top">
+    <header class="contact_header">
+      <h1><a href="index.html"><img src="images/logo.png" width="219px" height="60px" alt="前田製薬"></a></h1>
+      <nav class="gnav">
+        <div class="gnav_box">
+          <ul class="gnav1">
+            <li><a href="#">オンラインショップ</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <ul class="gnav2">
+            <li><a href="#X">製品情報</a></li>
+            <li><a href="#X">研究開発</a></li>
+            <li><a href="#X">サステナビリティ</a></li>
+            <li><a href="company_info.html">企業情報</a></li>
+            <li><a href="#X">お知らせ</a></li>
+            <li><a href="#X">リリース</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="wrapper">
+    <ol>
+      <li><a href="index.html">TOP&ensp;</a></li>
+      <li>&lt;&ensp;お問い合わせ</li>
+    </ol>
+    <div class="containar">
+      <section class="contact">
+        <div class="contact_box">
+          <h2>お問い合わせ</h2>
+          <div class="contact_guide">
+            <p>前田製薬に関するご質問・ご意見・ご感想を承っております。<br>
+              下記のフォームに必要事項をご入力のうえ、【入力内容確認へ進む】ボタンを押してください。</p>
+            <p><span class="item_equired">必須</span>&nbsp;印のついた項目は、必ずご入力ください。</p>
+          </div>
+          <form method="post" action="sample.cgi">
+            <table>
+              <tr>
+                <th><label for="privacy">
+                    <p class="item">個人情報保護について</p>
+                    <p class="item_equired">必須</p>
+                  </label>
+                </th>
+                <td>
+                  <input type="checkbox" name="privacy" value="Yes" id="privacy" required>
+                  <label for="privacy">同意する</label>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="category">
+                    <p class="item">カテゴリー</p>
+                    <p class="item_equired">必須</p>
+                  </label>
+                </th>
+                <td>
+                  <select name="category" required>
+                    <option>こちらから選択してください。</option>
+                    <option value="company">会社に関するお問い合わせ</option>
+                    <option value="food_drink">飲料・サプリメント・食品に関するお問い合わせ</option>
+                    <option value="medical">医療用医薬品に関するお問い合わせ</option>
+                    <option value="cosme">化粧品・医薬部外品等に関するお問い合わせ</option>
+                    <option value="reagent">研究用試薬に関するお問い合食わせ</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="message">
+                    <p class="item">内容</p>
+                    <p class="item_equired">必須</p>
+                  </label>
+                </th>
+                <td>
+                  <textarea name="message" id="message" cols="60" rows="6" placeholder="ご意見・お問い合わせをこちらにご記入ください。"
+                    required></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="name">
+                    <p class="item">お名前</p>
+                    <p class="item_equired">必須</p>
+                  </label>
+                </th>
+                <td>
+                  <input type="text" name="name" id="name" placeholder="前田" required>
+                  <input type="text" name="name" placeholder="太郎" required>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="mail">
+                    <p class="item">メールアドレス</p>
+                    <p class="item_equired">必須</p>
+                  </label>
+                </th>
+                <td>
+                  <input type="email" name="mail" id="mail" required><br>
+                  <input type="email" name="re_mail" required><span>&nbsp※再入力</span>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="tel">
+                    <p class="item">電話番号</p>
+                    <p class="item_equired">必須</p>
+                  </label>
+                </th>
+                <td>
+                  <input type="tel" name="tel" id="tel" required>
+                </td>
+              </tr>
+              <tr>
+                <th>性別</th>
+                <td class="gender">
+                  <label for="man"><input type="radio" name="gender" id="man">
+                    男性</label>
+                  <label for="woman"><input type="radio" name="gender" id="woman">
+                    女性</label>
+                  <label for="other"><input type="radio" name="other" id="other">
+                    その他</label>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="age">年齢</label></th>
+                <td>
+                  <input type="text" name="age" id="age">&nbsp才
+                </td>
+              </tr>
+              <!-- <tr>
+              <th>カタログ・資料送付</th>
+              <td>
+
+              </td>
+            </tr>
+
+              <tr>
+              <td colspan="2"></td>
+              <td>
+
+              </td>
+
+              </tr> -->
+            </table>
+            <div class="submit">
+              <button type="submit"><span>入力内容確認へ進む</span></button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+
+    </div>
+    <footer>
+      <h2>
+        <a href="index.html"><img src="images/logo_w.png" width="216px" height="60px" alt="前田製薬"></a>
+      </h2>
+      <div class="l_nav">
+        <div class="local_nav_box">
+          <nav class="local_nav2">
+            <ul>
+              <li><a href="#">製品情報</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">サステナビリティ</a></li>
+              <li><a href="#">企業情報</a></li>
+              <li><a href="#">お知らせ</a></li>
+              <li><a href="#">リリース</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="local_nav_box">
+          <nav class="local_nav1">
+            <ul>
+              <li><a href="#">オンラインショップ</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr>
+      <address>
+        本社所在地&emsp;
+        〒100-0001&emsp;東京都千代田区千代田&emsp;1-1
+        アジャストビル3階&emsp;&emsp;TEL&emsp;&frasl;&emsp;0120-000-0000
+      </address>
+      <small>Copyright&nbsp;&copy;&nbsp;Maeda Pharmaceutical Co., Ltd.</small>
+      <p class="footer_return_top">
+        <a href="#return_top">ページの上部に戻る</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
